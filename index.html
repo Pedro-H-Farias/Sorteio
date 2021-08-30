@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&family=Open+Sans&family=Poppins:ital,wght@0,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Show de Prêmios</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="background">
+        <img src="/images/Group 17.png" alt="" />
+      </div>
+
+      <div class="formulario">
+        <img src="/images/mini-logo.svg" alt="" />
+        <form action="" onsubmit="enviarDados(event)">
+          <h2 class="title">Nome</h2>
+          <input
+          id="nome"
+            required
+            type="text"
+            class="input"
+            placeholder="Digite seu nome completo"
+          />
+          <h2 class="title">E-mail</h2>
+          <input
+          id="email"
+            required
+            type="email"
+            class="input"
+            placeholder="Digite seu endereço de e-mail"
+          />
+          <h2 class="title">Telefone</h2>
+          <input
+          id="telefone"
+            required
+            type="text"
+            class="input"
+            placeholder="Digite seu telefone"
+          />
+          <h2 class="title">Cidade</h2>
+          <select name="" id="cidade">
+            
+            <option value="">Selecione a sua cidade</option>
+            <option value="Ouro-preto">Ouro Preto</option>
+            <option value="Porto-velho">Porto Velho</option>
+            <option value="Ji-parana">Ji paraná</option>
+          </select>
+
+          <div class="div">
+            <input required type="checkbox" class="meucheckbox" id="regras"/>
+            <span>Concordo com as regras do sorteio</span>
+          </div>
+          <div class="div">
+            <input required type="checkbox" class="meucheckbox" id="termos"/>
+            <span>Concordo com os termos de uso e privacidade</span>
+          </div>
+
+          <div class="buttons">
+            <button class="button">
+              <img src="/images/log-in 1.svg" alt="" />
+              Quero participar
+            </button>
+
+          </div>
+          </form>
+          <div class="buttons">
+
+            <a href="/sortear.html">
+              <button class="buttonADM">
+                <img src="/images/log-in 1.svg" alt="" />
+                Acessar página de ADM
+              </button>
+            </a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="/formularioController.js"></script>
+  </body>
+</html>
